@@ -11,13 +11,14 @@
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <title><tiles:getAsString name="title"/> </title>
  
- <link href="<spring:url value="/resources/theme1/css/bootstrap.3.11.min.css"/>" rel="stylesheet">
+  <!-- Must use c:out or spring:url, or js/css wont load.  -->
+ <script src="<spring:url value="/resources/theme1/js/jquery-2.1.0.min.js"/>"           type="text/javascript" ></script>
+ <script src="<spring:url value="/resources/theme1/js/jquery-1.11.1.validate.min.js"/>" type="text/javascript" ></script>
+ <script src="<spring:url value="/resources/theme1/js/bootstrap-3.11.min.js"/>"         type="text/javascript" ></script>
  <link href="<spring:url value="/resources/theme1/css/bootstrap-3.11-theme.min.css"/>" rel="stylesheet">
- <script src="/resources/theme1/js/jquery-2.1.0.min.js"          type="text/javascript" ></script>
- <script src="/resources/theme1/js/jquery-1.11.1.validate.min.js" type="text/javascript" ></script>
- <script src="/resources/theme1/js/bootstrap-3.11.min.js"      type="text/javascript" ></script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><tiles:getAsString name="title" /></title>
+ <link href="<spring:url value="/resources/theme1/css/bootstrap.3.11.min.css"/>" rel="stylesheet">
+
+ <title><tiles:getAsString name="title" /></title>
  </head>
  <body>
 <tilesx:useAttribute name="current"/>
